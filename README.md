@@ -8,7 +8,9 @@ Sucks the fun out of any party by killing off the program that is passed to it. 
 
 Clone this repository then:
 
+    # git clone https://github.com/rlyon/killjoy
     # cd killjoy
+    # git checkout 1.0.1
     # make
 
 This creates the 'killjoy' executable.  Copy the executable to it's final resting place.
