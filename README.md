@@ -17,6 +17,8 @@ This creates the 'killjoy' executable.  Copy the executable to it's final restin
 
 killjoy \[options\] \[utility\]
 
+## Options
+
 ```-t, --time=[[[[D:]H:]M:]S]``` - days, hours, minutes, and seconds to run the utility
 
 ```-q, --quiet``` - don't output any informative messages
