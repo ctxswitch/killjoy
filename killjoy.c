@@ -88,9 +88,9 @@ int timer(pid_t pid) {
             info ("Process continued");
         }
         running = (int) time(NULL) - start;
-    } while (WIFSIGNALED(status) || running <= opt_seconds);
+    } while (WIFSIGNALED(status) && running <= opt_seconds);
 
-    if (!WIFEXITED(status) || !WIFSIGNALED(status)) {
+    if (running > opt_seconds) {
         info ("Process has exceeded the time limit of %d seconds", opt_seconds);
         kill (pid,9);
         return 0;
