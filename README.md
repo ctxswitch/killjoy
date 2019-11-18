@@ -23,9 +23,15 @@ killjoy \[options\] \[utility\]
 
 ```-t, --time=[[[[D:]H:]M:]S]``` - days, hours, minutes, and seconds to run the utility
 
+```-s, --signal=[str|int]``` - the signal to pass the child process when the limit has been reached.  This is in integer or string (KILL,TERM,etc) form.
+
 ```-q, --quiet``` - don't output any informative messages
 
 ```-h, --help``` - display the help message
 
+## Reseting the timer
+
+The timer can be reset by sending the USR2 signal to the killjoy process.
+
 ## Version
-1.0.2
+1.1.0
